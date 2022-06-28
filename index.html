@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Pul konvertor</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="h1  mt-3">BUDGET APP</h1>
+
+        <div class="d-flex justify-content-between maindiv">
+            <div class="col-5  row budget_expense">
+                <form class="form border border-success border-2 p-4 mt-3 budget">
+                    <h3 class="h3">Please Enter Your Budget</h3>
+                    <input class="form-control budget__input" type="number">
+
+                    <button class="btn btn-outline-success mt-3">Calculate</button>
+                </form>
+
+                <form class="form border border-danger border-2 p-4 mt-5 expanse">
+                    <h3 class="h3">Please Enter Your Expense</h3>
+                    <input class="form-control expensename__input" type="text" required>
+
+                    <h3 class="h3 mt-4">Please Enter Expense Amount</h3>
+                    <input class="form-control expense__input" type="number" required>
+
+                    <button class="btn btn-outline-danger mt-3">Add Expense</button>
+                </form>
+            </div>
+
+            <div class="col-6 ">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h2 class="h2">BUDGET</h2>
+                        <p class="d-flex justify-content-center h1">💷</p>
+
+                        <p class="d-flex justify-content-center h1 mt-5 " style="color: green ;">
+                            <span class="budget__score">0</span> - sum
+                        </p>
+
+                    </div>
+
+                    <div>
+                        <h2 class="h2">EXPENSES</h2>
+                        <p class="d-flex justify-content-center h1 ">💳</p>
+
+                        <p class="d-flex justify-content-center h1 mt-5 " style="color: red;">
+                            <span class="expense__score">0</span> - sum
+                        </p>
+
+
+                    </div>
+
+                    <div>
+                        <h2 class="h2">BALANCE</h2>
+                        <p class="d-flex justify-content-center h1 ">💰</p>
+
+                        <p class="d-flex justify-content-center h1 mt-5 " style="color: green;">
+                            <span class="balanse">0</span> - sum
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between mt-5">
+                    <h3 class="h3 expense__title">Expense Title</h3>
+                    <h3 class="h3 expense__value">Expense Value</h3>
+                    <h3 class="h3"></h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
